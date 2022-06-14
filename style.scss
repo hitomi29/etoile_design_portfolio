@@ -302,11 +302,7 @@ body {
         opacity: 0.8;
       }
     }
-    .copyright {
-       font-size: 1.2rem;
-       text-aline: center;
-       margin-bottom: 2rem;
-      }
+    
   }
 }
 
@@ -387,6 +383,11 @@ body {
               color: #00acee;
             }
         }
+      .copyright {
+       font-size: 1.2rem;
+       text-aline: center;
+       margin-bottom: 2rem;
+      }
     }
 
     // scrollify.jsに関係する記述はここかから
