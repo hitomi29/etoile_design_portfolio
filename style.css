@@ -1130,10 +1130,11 @@ body {
   .thanks_page_sec .thanks_br {
     display: block;
   }
-  .copyright {
+}
+
+.copyright {
    font-size: 1.2rem;
    text-aline: center;
    margin-bottom: 2rem;
       }
-}
 /*# sourceMappingURL=style.css.map */
