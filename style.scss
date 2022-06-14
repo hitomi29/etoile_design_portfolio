@@ -382,10 +382,6 @@ body {
               color: #00acee;
             }
         }
-      .copyright {
-          font-size: 1.2rem;
-          margin-bottom: 2rem;
-      }
     }
 
     // scrollify.jsに関係する記述はここかから
@@ -1169,4 +1165,11 @@ margin: 8rem 0 7.5rem 0;
     }
   }
   }
+ 
+//  copy right
+    .copyright {
+       font-size: 1.2rem;
+       text-aline: center;
+       margin-bottom: 2rem;
+      }
 
