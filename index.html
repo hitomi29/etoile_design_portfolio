@@ -55,7 +55,7 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         </ul>
       </nav>
       <div class="main_visual_text">
-        <p class="main_text">キラリと輝く<br>あなたらしいデザイン<br>一緒に想いを“形”にしてみませんか？</p>
+        <p class="main_text">キラリと輝く<br>あなたらしいデザイン<br>一緒に想いを“形”に<br class="main_br">してみませんか？</p>
       </div>
       <div class="scrolldown"><span>SCROLL</span></div>
       <div>
@@ -154,12 +154,12 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         </h2>
         <div class="work_list">
           <ul>
-            <li><img src="images/slider1_pc.jpg" alt="制作物画像"></li>
-            <li><img src="images/slider2_pc.jpg" alt="制作物画像"></li>
-            <li><img src="images/slider3_pc.jpg" alt="制作物画像"></li>
-            <li><img src="images/slider4_pc.jpg" alt="制作物画像"></li>
-            <li><img src="images/slider5_pc.jpg" alt="制作物画像"></li>
-            <li><img src="images/slider6_pc.jpg" alt="制作物画像"></li>
+            <li><a href="work.html"><img src="images/slider1_pc.jpg" alt="制作物画像"></a></li>
+            <li><a href="work.html"><img src="images/slider2_pc.jpg" alt="制作物画像"></a></li>
+            <li><a href="work.html"><img src="images/slider3_pc.jpg" alt="制作物画像"></a></li>
+            <li><a href="work.html"><img src="images/slider4_pc.jpg" alt="制作物画像"></a></li>
+            <li><a href="work.html"><img src="images/slider5_pc.jpg" alt="制作物画像"></a></li>
+            <li><a href="work.html"><img src="images/slider6_pc.jpg" alt="制作物画像"></a></li>
           </ul>
         </div>
         <div class="readmore_btn2">
@@ -213,12 +213,14 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
             </div>
           </div>
           <div class="fs_icons">
-            <div class="instagram"><a class="fab fa-instagram" href="https://www.instagram.com/etoile___design/" target="_blank"></a>
+            <div class="instagram"><a class="fab fa-instagram" href="https://www.instagram.com/etoile___design/"
+                target="_blank"></a>
             </div>
-            <div class="twitter"><a class="fab fa-twitter" href="https://twitter.com/design_etoile" target="_blank"></a></div>
+            <div class="twitter"><a class="fab fa-twitter" href="https://twitter.com/design_etoile" target="_blank"></a>
+            </div>
           </div>
+          <p class="copyright">©️2022 etoile design</p>
         </div>
-        <p class="copyright">©2022 etoile dsign</p>
       </div>
     </div>
   </footer>
@@ -231,20 +233,43 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!--============== jQuery ===============-->
   <script>
     // GALLERYスライダー
-    $('.work_list ul').slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      responsive: [
-        {
-          breakpoint: 787, //786px以下のサイズに適用
-          settings: {
-            slidesToShow: 1,
+    // $('.work_list ul').slick({
+    //   slidesToShow: 5,
+    //   slidesToScroll: 1,
+    //   arrows: false,
+    //   autoplay: true,
+    //   autoplaySpeed: 2000,
+    //   responsive: [
+    //     {
+    //       breakpoint: 787, //786px以下のサイズに適用
+    //       settings: {
+    //         slidesToShow: 1,
+    //         autoplaySpeed: 3000,
+    //       },
+    //     },
+    //   ],
+    // });
+    $(document).ready(function () {
+      $('.work_list ul').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 4000,
+        arrows: false,
+        cssEase: 'linear',
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 787, //786px以下のサイズに適用
+            settings: {
+              slidesToShow: 1,
+              speed: 5000,
+
+            },
           },
-        },
-      ],
+        ],
+      });
     });
 
     // ハンバーガーメニュー 
