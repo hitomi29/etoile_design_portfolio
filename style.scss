@@ -92,6 +92,9 @@ body {
                 a {
                   font-size: $fs18;
                   display: block;
+                  &:last-child {
+                    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+                  }
                 }
           }
       .logo {
@@ -109,6 +112,9 @@ body {
                 line-height: 2;
                 letter-spacing: 0.05em;
                 padding:12rem 0 16rem 25rem;
+            }
+            .main_br {
+              display: none;
             }
       }
 
@@ -180,7 +186,8 @@ body {
   #about {
     .about_sec {
       background:url(images/About_back2_pc.svg) no-repeat center/cover;
-      height: 65rem;
+      height: 70rem;
+      margin-bottom: 7.8rem;
        .container {
           position: relative;
 
@@ -193,6 +200,7 @@ body {
             .about_h2 {
               img {
                 position: relative;
+                margin-top: 3rem;
               }
             }
 
@@ -218,7 +226,7 @@ body {
               letter-spacing: 0.05em;
               background-color: #fff;
               align-items: center;
-              padding: 3rem 8rem 8rem 5rem;
+              padding: 5rem;
               box-shadow:39px 0px 39px -30px rgba(0, 0, 0, 0.2) inset;
                 .sp_br {
                   display: none;
@@ -284,7 +292,7 @@ body {
         .work_list {
           ul {
             display: flex;
-            margin-top: 2rem;
+            margin-top: 6rem;
               li {
                 width: 20%;
                 img {
@@ -302,7 +310,6 @@ body {
         opacity: 0.8;
       }
     }
-    
   }
 }
 
@@ -360,9 +367,13 @@ body {
                     input {
                       width: 10rem;
                       height: 3rem;
-                      background-color: transparent;
-                      border: 1px solid  #28211C;
-                      color:  #28211C;
+                      background-color: #687784;
+                      border: none;
+                      border-radius: 3rem;
+                      color:  #ffffff;
+                      &:hover {
+                        opacity: 0.8;
+                      }
                     }
                     }
                 }
@@ -372,7 +383,7 @@ body {
       .fs_icons {
         display: flex;
         justify-content: center;
-        margin: 10rem 0 5rem 0;
+        margin: 8rem 0 5rem 0;
         font-size: 3.6rem;
         color:#1B333F;
             .instagram {
@@ -383,6 +394,7 @@ body {
               color: #00acee;
             }
         }
+      }
     }
 
     // scrollify.jsに関係する記述はここかから
@@ -416,6 +428,15 @@ body {
      @media screen and (max-width: 820px) {
        #header {
            .header_wrap {
+            ul {
+              li {
+                a {
+                  &:last-child {
+                    text-shadow: none;
+                  }
+                }
+              }
+            }
              .sp_logo {
                display: block;
                width: 10rem;
@@ -469,13 +490,13 @@ body {
           .contact_wrap {
             height: 85rem;
             .container {
-              padding: 0 2rem;
+              padding: 0 3rem;
               .contact_box {
                 display: block;
                 .contact_left {
                   text-align: center;
                   .contact_text {
-                    margin: 4.9rem 0 6.5rem 0;
+                    margin: 4rem 0 4rem 0;
                     font-size: 2.1rem;
                   }
                 }
@@ -500,14 +521,18 @@ body {
                    }
                    .submit-btn{
                     margin: 3rem 15rem 0 0;
+                    
                    }
                  }
                 }
               }
             }
             .fs_icons {
-              margin: 3rem 0 3rem 0;
+              margin: 5rem 0 3rem 0;
               font-size: 2.9rem;
+            }
+            .copyright {
+             margin: 2rem 0 0 0;
             }
           }
         }
@@ -600,9 +625,13 @@ body {
           }
           .main_visual_text { 
             .main_text {
-              font-size: 4.8vw;
-              padding:26.7rem 0 14.6rem 2rem;
+              // font-size: 4.8vw;
+              font-size: 7.47vw;
+              padding:26.7rem 0 14.6rem 6rem;
              }
+             .main_br {
+              display: block;
+            }
           }
           .main_visual1 {
             width: 25.9rem;
@@ -691,9 +720,14 @@ body {
           display: block;
           li {
             width: 100%;
-            padding: 0 5.3rem;
+            padding: 0 2rem;
             box-sizing: border-box;
             margin-bottom: 5.3rem;
+            .service_icon {
+              img {
+                width: 12rem;
+              }
+            }
               .service_title {
                 font-size: $fs18;
                 margin:2.5rem 0  2.5rem 0;
@@ -734,7 +768,7 @@ body {
              };
            }
            .contact_text {
-             margin: 5rem 0 5rem 0;
+             margin: 4rem 0 4rem 0;
              font-size: 3.73vw;
            }
          }
@@ -754,6 +788,12 @@ body {
           }
          }
        }
+     }
+     .fs_icons {
+      margin: 4rem 0 2rem 0;
+     }
+     .copyright {
+      margin-top: 3rem;
      }
    }
  }
@@ -902,6 +942,9 @@ margin: 8rem 0 7.5rem 0;
   text-align: center;
   margin-bottom: 5rem;
 }
+.copyright {
+  text-align: center;
+}
 }
 
 // Aboutページタブレットレスポンシブ
@@ -991,6 +1034,7 @@ margin: 8rem 0 7.5rem 0;
         margin: 0 auto 5rem;
       }
     }
+    
   }
 }
 
@@ -1167,3 +1211,9 @@ margin: 8rem 0 7.5rem 0;
   }
   }
 
+  // コピーライト
+  .copyright {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
