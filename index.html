@@ -36,7 +36,7 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="#service">SERVICE</a></li>
             <li>
-              <h1 class="logo"><a href="#header"><img src="images/logo5.svg" alt="etoile design ロゴ"></a></h1>
+              <h1 class="logo1"><a href="#header"><img src="images/logo5.svg" alt="etoile design ロゴ"></a></h1>
             </li>
             <li><a href="work.html">WORK</a></li>
             <li><a href="#contact">CONTACT</a></li>
@@ -225,6 +225,11 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </div>
   </footer>
 
+  <!--============== トップへボタン ===============-->
+  <div class="to_top_button">
+    <a href="#header"><img src="images/to_top_sp@2x.png" alt="トップへボタン"></a>
+  </div>
+
   <!-- トップページのロゴフェード -->
   <!-- <div class="start">
     <p><img src="images/logo4.svg" alt=""></p>
@@ -249,6 +254,8 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     //     },
     //   ],
     // });
+
+    // GALLERYスライダー
     $(document).ready(function () {
       $('.work_list ul').slick({
         slidesToShow: 5,
@@ -270,6 +277,19 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
           },
         ],
       });
+    });
+
+    // スムーススクロール
+    $('a[href^="#"]').click(function () {
+      // スクロールの速度
+      let speed = 500; // ミリ秒で記述
+      let href = $(this).attr("href");
+      let target = $(href == "#" || href == "" ? 'html' : href);
+      let position = target.offset().top - 60;
+      $('body,html').animate({
+        scrollTop: position
+      }, speed, 'swing');
+      return false;
     });
 
     // ハンバーガーメニュー 
@@ -314,7 +334,6 @@ ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     //     $('.start').fadeOut(500);
     //   }, 2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
     // });
-
   </script>
 </body>
 
