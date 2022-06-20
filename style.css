@@ -723,7 +723,7 @@ body {
   }
   #service .service_sec .container ul li .service_title {
     font-size: 1.8rem;
-    margin: 2.5rem 0  2.5rem 0;
+    margin: 3rem 0 1.5rem 0;
   }
   #service .service_sec .container ul li .service_text {
     line-height: 1.25;
@@ -1176,10 +1176,12 @@ body {
     margin: 5rem auto 5rem;
   }
   .work_page_sec .container .work_title {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.05em;
   }
   .work_page_sec .container .work_text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
   .work_page_sec .container .work_box {
     display: block;
