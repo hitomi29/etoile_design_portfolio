@@ -19,7 +19,7 @@ dd {
   padding: 0;
   line-height: 1;
   color: #28211C;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
 }
